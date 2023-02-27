@@ -1,7 +1,7 @@
 # REST API Category Manager
 ## Autor Michał Strzygowski
 
-Wtyczka REST API Category Manager zapewnia możliwość zarządzania Kategoriami w jezykach PL / EN / DE / FR poprzez wysyłanie żądania REST/HTTP do serwera.
+Wtyczka REST API Category Manager zapewnia możliwość zarządzania kategoriami w jezykach PL / EN / DE / FR poprzez wysyłanie żądania REST/HTTP do serwera.
 
 ## REST Endpoints
 
@@ -17,10 +17,12 @@ DELETE          api/categories/{id}
 
 ## Installation
 
-Po rozpakowaniu projektu wykonaj komend z lini komend:
+Po rozpakowaniu projektu wykonaj komendy w wierszu poleceń:
+
+```
 cd example-app
 docker-compose up
 docker-compose exec laravel.test composer install
 ./vendor/bin/sail php artisan migrate:install 
 ./vendor/bin/sail php artisan migrate --seed
-
+```
